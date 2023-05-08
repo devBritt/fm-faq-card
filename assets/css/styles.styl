@@ -57,6 +57,10 @@ summary
 
 // styles
 body
+  min-height 100vh
+  display grid
+  justify-content center
+  align-content center
   background-image bg__gradient
 
 #faq_card
@@ -95,10 +99,56 @@ details
   text-align center
   > a
     text-decoration none
-    color hsl(228, 45%, 44%)
+    color text__color_dark__blue
+    &:hover
+      color text__color_red
 
 // layout
+#faq_card
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  height 100%
+  position relative
+  border-radius border__radius
+  box-shadow 0 50px 50px -20px shadow__color
+  > *
+    width 100%
 
+// TODO add card image styles here
+
+#card__content
+  width 320px
+  padding 0 mobile_sm__space mobile_md__space mobile_sm__space
+
+.faq__item
+  padding faq__item_pb 0
+  border-bottom 1px solid dividers__color_light__gray
+
+.faq__question
+  position relative
+  &::before
+    content ""
+    position absolute
+    top 30%
+    right 0
+    background-image url('../images/icon-arrow-down.svg')
+    width 0.8rem
+    height 0.6rem
+    background-repeat no-repeat
+
+.faq__item[open] .faq__question
+  margin-bottom faq__answer_mt
+  &::before
+    transform rotate(180deg)
+
+footer
+  position absolute
+  bottom -0
+  width 100%
+  padding-bottom 1rem
+  color white
 
 // media queries
 
