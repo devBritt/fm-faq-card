@@ -56,6 +56,39 @@ summary
   font-family 'Kumbh Sans', sans-serif
 
 // styles
+body
+  background-image bg__gradient
+
+#faq_card
+  background-color white
+
+.faq__item
+  cursor pointer
+
+// typography
+summary
+details
+  list-style none
+
+.content__title
+  color text__color_dark__blue
+  font-size xl__text
+  text-align center
+  font-weight 700
+  margin-bottom mobile_lg__space
+
+.faq__item[open='true'] .faq__question
+  font-weight 700
+
+.faq__question
+  color text__color_dark__gray
+  font-size md__text
+  &:hover
+    color text__color_red
+
+.faq__answer
+  color text__color_gray
+  font-size sm__text
 
 .attribution
   font-size 11px
@@ -63,6 +96,9 @@ summary
   > a
     text-decoration none
     color hsl(228, 45%, 44%)
+
+// layout
+
 
 // media queries
 

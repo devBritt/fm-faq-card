@@ -21,6 +21,40 @@ summary {
   overflow-wrap: break-word;
   font-family: 'Kumbh Sans', sans-serif;
 }
+body {
+  background-image: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+}
+#faq_card {
+  background-color: #fff;
+}
+.faq__item {
+  cursor: pointer;
+}
+summary,
+details {
+  list-style: none;
+}
+.content__title {
+  color: #1d1e35;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.faq__item[open='true'] .faq__question {
+  font-weight: 700;
+}
+.faq__question {
+  color: #4a4b5e;
+  font-size: 0.813rem;
+}
+.faq__question:hover {
+  color: #f47c57;
+}
+.faq__answer {
+  color: #787887;
+  font-size: 0.75rem;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
