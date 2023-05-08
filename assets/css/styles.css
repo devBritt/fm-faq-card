@@ -19,4 +19,13 @@ h2,
 details,
 summary {
   overflow-wrap: break-word;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution > a {
+  text-decoration: none;
+  color: #3e52a3;
 }
